@@ -1,0 +1,117 @@
+//screen.sass  
+
+//import reset
+@import "partials/_reset"
+ 
+//import other
+@import "partials/_buttons"
+@import "partials/_headers" 
+@import "partials/_footer"
+@import "partials/_modals" 
+
+body
+    background-color: #000
+    background: url("http://global-offensive.com/wp-content/uploads/sites/8/2014/02/counter-strike-global-offensive-game-hd-wallpaper-1920x1080-8976.jpg") center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover  
+
+    &::after
+        content: ""
+        display: block
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 110%
+        z-index: -1
+
+        background-color: rgba(0,0,0,.8)
+
+//main app
+.app__body
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    position: relative
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 40px
+    padding: 16px
+    width: 80vw
+    height: 100vh
+
+    .board__meta
+        display: block
+        text-align: center
+
+    .board__meta > *
+        display: block 
+        
+    .current-round, .map
+        color: $white-color
+        font-size: 53px
+
+    .current-round
+
+    .map
+        font-size: 24px
+        font-weight: $bold
+
+    .team
+        display: block
+        justify-content: center
+        flex-direction: column
+        position: relative
+        width: 350px
+        height: 350px
+        overflow: hidden
+
+        background-color: $black-color
+
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+
+        .team-background
+            display: block
+            position: absolute
+            top: -35%
+            left: -35%
+            width: 170%
+            height: 170%
+
+        .bg-overlay 
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0,0,.8)
+            background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 100%) 
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.4))) 
+            background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 100%) 
+            background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 100%) 
+            background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 100%) 
+            background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 100%) 
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#66000000',GradientType=0 ) 
+               
+        .name, .score
+            display: block
+            position: relative
+            padding: 8px
+            color: $white-color
+            font-size: 32px
+            text-align: center
+
+        .score
+            font-size: 200px
+            text-shadow: 0px 0px 10px $green-color
+
+        .team-logo
+            display: block
+            position: relative
+            width: 250px
+            opacity: 0
+
+            img
+                max-width: 100%
