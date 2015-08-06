@@ -2,13 +2,16 @@
 function scoreboard() {
 
     //Variables
+    var url = "http://localhost/CSGO%20Scoreboard/data/scoreboard.json";
     var jsonData = [];
     var interval = 0;
     var frequency = 5000;
 
     var init = function() {
         clearData();
-        getData();
+        getData(url, function(data) {
+            jsonData = data
+        });
 
         setTimeout(function() {
             getMap();
@@ -19,11 +22,20 @@ function scoreboard() {
         }, 100);
     };
 
-    var getData = function() {
-        $.getJSON("http://localhost/CSGO%20Scoreboard/data/scoreboard.json", function(data) {
-            jsonData = data
-            console.log("got the data");
-        });
+    var getData = function(path, callback) {
+        var hr = new XMLHttpRequest();
+
+        hr.onreadystatechange = function() {
+            if ( hr.readyState === 4 ) {
+                if ( hr.status === 200 ) {
+                    var jsonData = JSON.parse(hr.responseText);
+                    if ( callback ) callback(jsonData);
+                    console.log("Got data");
+                }
+            }
+        };
+        hr.open("GET", path);
+        hr.send();
     };
 
     var clearData = function() {
@@ -66,14 +78,9 @@ function scoreboard() {
         $team2.append(roundWins[1].rounds_won);
     };
 
-    //Log the player to the console
-    var getPlayers = function() {
-        
-    }
-
     var reloadData = function() {
         clearData();
-        getData();
+        getData(url);
         getTeams();
         console.log("Reloaded Data")
         getMap();
