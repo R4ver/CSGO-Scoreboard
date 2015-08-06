@@ -17,7 +17,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -27,7 +29,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -37,7 +41,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -47,7 +53,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -57,7 +65,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           }
         ]
@@ -74,7 +84,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -84,7 +96,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -94,7 +108,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -104,7 +120,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           },
 
@@ -114,7 +132,9 @@
             "score": {
               "kills": 0,
               "deaths": 0,
-              "assists": 0
+              "assists": 0,
+              "mvp": 0,
+              "total_score": 0
             }
           }
         ]
