@@ -1,16 +1,147 @@
 {
-  "map": "de_dust2",
-  "round": 1,
-  "teams": [
-    {
-      "id": 1,
-      "name": "Wonderful Wombats",
-      "roundsWon": 0
-    },
-    {
-      "id": 2,
-      "name": "Obscure Ostriches",
-      "roundsWon": 0
-    }
-  ]
+  //Data
+  "match": {
+    "id": 1,
+    "title": "Odense Tournament 2015",
+    "map": "de_dust2",
+    "round": 1,
+    "teams": [
+      {
+        "team_id": 1,
+        "team_name": "Wonderful Wombats",
+        "rounds_won": 0,
+        "players": [
+          {
+            "player_id": 1,
+            "player_name": "Theresa Payne",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 2,
+            "player_name": "Patrick Pratt",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 3,
+            "player_name": "Ed Brock",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 4,
+            "player_name": "Rufus Robertson",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 5,
+            "player_name": "Mark  Obrien",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          }
+        ]
+      },
+
+      {
+        "team_id": 2,
+        "team_name": "Obscure Ostriches",
+        "rounds_won": 0,
+        "players": [
+          {
+            "player_id": 1,
+            "player_name": "Deborah Carson",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 2,
+            "player_name": "Samuel Silva",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 3,
+            "player_name": "Guadalupe Williamson",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 4,
+            "player_name": "Scott Stewart",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          },
+
+          {
+            "player_id": 5,
+            "player_name": "Frankie Murphy",
+            "score": {
+              "kills": 0,
+              "deaths": 0,
+              "assists": 0
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+
+  //Objects
+  "match": {
+    "match_id": int,
+    "match_title": string,
+    "map": string,
+    "round": int,
+    "teams": [team]
+  },
+
+  "team": {
+    "team_id": int,
+    "team_name": string,
+    "rounds_won": int,
+    "players": [player]
+  },
+
+  "player": {
+    "player_id": int,
+    "player_name": string,
+    "score": [K/D/A]
+  }
 }
