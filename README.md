@@ -21,7 +21,7 @@ CSGO Odense Tournament Scoreboard
     "player": {
         "player_id": int,
         "player_name": string,
-        "score": [K/D/A/MVP/Score]
+        "score": {int}
     }
 }
 ```
