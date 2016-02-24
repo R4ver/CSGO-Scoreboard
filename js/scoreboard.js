@@ -20,7 +20,7 @@ function scoreboard() {
     };
 
     var getData = function() {
-        $.getJSON("http://localhost/CSGO%20Scoreboard/data/scoreboard.json", function(data) {
+        $.getJSON("http://localhost/csgoscoreboard/data/scoreboard.json", function(data) {
             jsonData = data
             console.log("got the data");
         });
